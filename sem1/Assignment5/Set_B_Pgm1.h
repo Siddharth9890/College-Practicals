@@ -4,12 +4,33 @@
 typedef struct node
 {
     int info;
-    struct node *next,*prev;
+    struct node *next, *prev;
 } node;
 
 void insert(node *head, int x)
-{ 
-    
+{
+    node *current;
+
+    node *newnode = (node *)malloc(sizeof(node));
+    newnode->info = x;
+    if (head == NULL)
+        head = newnode;
+
+    else
+    {
+        current = head;
+        while (current->next != NULL &&
+               current->next->info < newnode->info)
+            current = current->next;
+
+        newnode->next = current->next;
+
+        if (current->next != NULL)
+            newnode->next->prev = newnode;
+
+        current->next = newnode;
+        newnode->prev = current;
+    }
 }
 
 int search(node *head, int x)
