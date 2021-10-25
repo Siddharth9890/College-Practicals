@@ -1,4 +1,0 @@
-Delhi 001
-Mumbai 002 
-Pune 003
-Solapur 004
