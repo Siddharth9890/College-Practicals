@@ -1,0 +1,44 @@
+#nonFlower
+{
+  font-size:33px;
+  color:GreenYellow;
+  font-style:bold;
+}
+#flower
+{
+  font-size:32px;
+  color:BlueViolet;
+  font-style:bold;
+  
+}
+
+#fern
+{
+  font-size:30px;
+  color:Red;
+  font-style:bold;
+}
+#spore
+{
+  font-size:20px;
+  color:Blue;
+  font-style:italic
+}
+#lilly
+{
+  font-size:22px;
+  color:Violet;
+  font-style:italic;
+}
+#redRose
+{
+  font-size:21px;
+  color:Red;
+  font-style:italic;
+}
+#pinkRose
+{
+  font-size:22px;
+  color:Pink;
+  font-style:bold;
+}
