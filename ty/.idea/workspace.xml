@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e8e2ebbc-530e-4464-8536-29b3f7d7b4e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/A/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/A/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Assignment1/Set_B_Pgm1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Assignment1/Set_B_Pgm1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Assignment1/Set_B_Pgm2.css" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Assignment1/Set_B_Pgm2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Assignment1/Set_B_Pgm2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Assignment1/Set_B_Pgm2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Assignment1/Set_B_Pgm3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Assignment1/Set_B_Pgm3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/Assignment1/tempCodeRunnerFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/StringMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/StringMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/StringMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/StringMethods.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="20rJQq4Zq9ZP2C8EXG1LtaEw2ji" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8e2ebbc-530e-4464-8536-29b3f7d7b4e1" name="Changes" comment="" />
+      <created>1636796762854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636796762854</updated>
+    </task>
+    <servers />
+  </component>
+</project>

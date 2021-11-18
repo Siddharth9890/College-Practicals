@@ -1,65 +1,63 @@
 import java.util.Scanner;
 
-class Employee {
+public class Main {
     int id;
     String name;
     String deptName;
     float salary;
-    static int count;
+    static int numberOfObjects = 0;
 
-    Employee() {
+    Main() {
         id = 0;
         name = "";
         deptName = "";
         salary = 0;
-        count++;
     }
 
-    Employee(int id, String name, String deptName, float salary) {
+    Main(int id, String name, String deptName, float salary) {
+
         this.id = id;
         this.name = name;
         this.deptName = deptName;
         this.salary = salary;
-        count++;
-    }
-
-    static int getCount() {
-        return count;
-    }
-
-    public void displayInfo() {
-        System.out.println("Name is : " + name);
-        System.out.println("deptName is : " + deptName);
-        System.out.println("salary is : " + salary);
+        numberOfObjects++;
 
     }
-}
 
-public class Set_A_Pgm1 {
-    public static void main(String args[]) {
+    public void display() {
+
+        System.out.println("\nEmployee Id :" + id + "\nEmployee name: " + name + "\nEmployee deptname:" + deptName
+                + "\nEmployee Salary :" + salary);
+
+    }
+
+    public static void main(String[] args) {
+
+        int n = 0;
         Scanner scn = new Scanner(System.in);
-        System.out.println("How many objects");
-        int n = scn.nextInt();
-        Employee[] e = new Employee[n];
-        int id;
-        String name;
-        String deptName;
-        float salary;
+        System.out.print("How many employees :");
+        n = scn.nextInt();
+        Main[] ob = new Main[n];
         for (int i = 0; i < n; i++) {
-            System.out.println("Enter id");
-            id = scn.nextInt();
-            System.out.println("Enter name");
-            name = scn.next();
-            System.out.println("Enter deptName");
-            deptName = scn.next();
-            System.out.println("Enter salary");
-            salary = scn.nextFloat();
-            e[i] = new Employee(id, name, deptName, salary);
-            System.out.println("Object created count: " + Employee.getCount());
+
+            scn = new Scanner(System.in);
+            System.out.println("Enter Id of employee " + (i + 1) + "  :");
+            int id = scn.nextInt();
+            System.out.println("Enter Name of employee " + (i + 1) + "  :");
+            scn.nextLine();
+            String name = scn.nextLine();
+            System.out.println("Enter dept name of employee " + (i + 1) + "  :");
+            String deptName = scn.nextLine();
+            System.out.println("Enter salary of employee " + (i + 1) + "  :");
+            float salary = scn.nextFloat();
+            ob[i] = new Main(id, name, deptName, salary);
+            System.out.println("\nNumber of Objects : " + numberOfObjects);
+
         }
-        System.out.println("Displaying info of objects created");
+
         for (int i = 0; i < n; i++) {
-            e[i].displayInfo();
+            ob[i].display();
+
         }
         scn.close();
     }

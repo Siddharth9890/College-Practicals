@@ -2,13 +2,13 @@
 {
   font-size:33px;
   color:GreenYellow;
-  font-style:bold;
+  font-style:normal;
 }
 #flower
 {
   font-size:32px;
   color:BlueViolet;
-  font-style:bold;
+  font-style: oblique;
   
 }
 
@@ -16,7 +16,7 @@
 {
   font-size:30px;
   color:Red;
-  font-style:bold;
+  font-style: normal;
 }
 #spore
 {
@@ -30,15 +30,21 @@
   color:Violet;
   font-style:italic;
 }
-#redRose
+#Rose
 {
   font-size:21px;
+  color:darkgreen;
+  font-style:normal;
+}
+#redRose
+{
+  font-size:20px;
   color:Red;
   font-style:italic;
 }
 #pinkRose
 {
-  font-size:22px;
+  font-size:19px;
   color:Pink;
-  font-style:bold;
+  font-style: oblique;
 }

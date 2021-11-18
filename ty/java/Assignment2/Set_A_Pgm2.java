@@ -1,72 +1,61 @@
-import java.util.Scanner;
+import java.util.*;
 
-class Student {
-    static int cnt = 0;
-    int rno;
+class Main {
+    int rollNo;
     String name;
-    double percentage;
+    float percentage;
 
-    Student(int rno, String name, double percentage) {
-        rno = this.rno;
-        name = this.name;
-        percentage = this.percentage;
+    Main() {
+        rollNo = 0;
+        name = "";
+        percentage = 0;
     }
 
-    Student() {
-        rno = 0;
-        name = null;
-        percentage = 0.0;
-    }
-
-    static void sortStudent(Student s1[], int n, Student y) {
-        int temp = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 1; j < (n - i); j++) {
-                if (s1[j].percentage < s1[i].percentage) {
-                    y = s1[i];
-                    s1[i] = s1[j];
-                    s1[j] = y;
-                }
-
-            }
-        }
-    }
-
-    static void displayCount() {
-        ++cnt;
-        System.out.println("Object created :" + cnt);
+    Main(int rollNo, String name, float percentage) {
+        this.rollNo = rollNo;
+        this.name = name;
+        this.percentage = percentage;
     }
 
     void display() {
-        System.out.println("Roll No: " + rno + "Name: " + name + "Percentage: " + percentage);
+        System.out.println(rollNo + " " + name + " " + percentage);
     }
 
-}
+    float getPercentage() {
+        return percentage;
+    }
 
-public class Set_A_Pgm2 {
+    public static void sort(Main s[], int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (s[j].getPercentage() > s[j + 1].getPercentage()) {
+                    Main t = s[j];
+                    s[j] = s[j + 1];
+                    s[j + 1] = t;
+
+                }
+            }
+        }
+        for (int i = n - 1; i >= 0; i--)
+            s[i].display();
+    }
+
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-        System.out.println("How many objects");
+
+        System.out.println("Enter no.of students: ");
         int n = scn.nextInt();
-        Student[] e = new Student[n];
-        int id;
-        String name;
-        String deptName;
-        double salary;
+        Main array[] = new Main[n];
         for (int i = 0; i < n; i++) {
-            System.out.println("Enter id");
-            id = scn.nextInt();
-            System.out.println("Enter name");
-            name = scn.next();
-            System.out.println("Enter salary");
-            salary = scn.nextFloat();
-            e[i] = new Student(id, name, salary);
-            System.out.println("Object created count: " + Student.displayCount());
+            System.out.print("Enter rollNo.:");
+            int rollNo = scn.nextInt();
+            System.out.print("Enter name:");
+            String name = scn.next();
+            System.out.print("Enter percentage:");
+            float per = scn.nextFloat();
+            array[i] = new Main(rollNo, name, per);
         }
-        System.out.println("Displaying info of objects created");
-        for (int i = 0; i < n; i++) {
-            e[i].display();
-        }
+        Main.sort(array, n);
         scn.close();
     }
 }
